@@ -1,1 +1,8 @@
-
+jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # Change '3.7' to a version present in the manifest
